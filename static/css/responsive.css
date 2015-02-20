@@ -1,0 +1,24 @@
+/* for landscape mobile 
+@media screen and (min-width: 480px) {
+
+}
+*/
+
+/* for tablets and desktops */
+@media screen and (min-width: 660px) {
+
+	/****************************
+			MENU
+	*****************************/
+	.menu {
+		background: none;
+		position: absolute;
+		top: 50px;
+		left: 25%;
+	}
+
+	.menu-list li {
+		margin: 0 2%;
+	}
+
+};

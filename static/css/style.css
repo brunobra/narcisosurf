@@ -1,0 +1,61 @@
+/****************************
+			ALL PAGE
+*****************************/
+
+html {
+	background: #E9CE9D;
+	font-family: 'Original Surfer', cursive;
+}
+
+
+/****************************
+			HEADER
+*****************************/
+
+header {
+	width: 100%;
+}
+
+.background img {
+	width: 100%;
+}
+
+.logo {
+	height: 130px;
+	width: 130px;
+	border-radius: 120px;
+	background: black;
+	text-align: center;
+	margin: 0 auto;
+	position: absolute;
+	top: 2px;
+	right: 0;
+	left: 0;
+}
+
+.logo img {
+	height: 97%;
+	border-radius: 80px;
+	margin: 0 auto;
+}
+
+
+/****************************
+			MENU
+*****************************/
+
+.menu {
+	margin: 0 auto;
+	margin-top: -20px;
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	background: linear-gradient(to right, #C8A379, #E6C399, #C8A379);
+}
+
+.menu-list li {
+	display: inline-block;
+	margin: 0 3%;
+	color: white;
+	font-size: 1.5em;
+}
