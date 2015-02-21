@@ -17,8 +17,16 @@
 		left: 25%;
 	}
 
-	.menu-list li {
-		margin: 0 2%;
+	.menu-list {
+		top: 0;
+		right: 0;
+		width: 100%;
+		padding: 0;
+	}
+
+
+	.menu img {
+		display: none;
 	}
 
 };

@@ -7,6 +7,11 @@ html {
 	font-family: 'Original Surfer', cursive;
 }
 
+a {
+	text-decoration: none;
+	color: white;
+}
+
 
 /****************************
 			HEADER
@@ -48,14 +53,30 @@ header {
 	margin: 0 auto;
 	margin-top: -20px;
 	width: 100%;
-	height: 30px;
+	height: 105px;
 	text-align: center;
-	background: linear-gradient(to right, #C8A379, #E6C399, #C8A379);
+	background-image: url("../img/board5.png");
+	background-repeat: repeat-y;
+	background-position: center;
+	/*background: linear-gradient(to right, #C8A379, #E6C399, #C8A379);*/
+}
+
+.menu-list {
+	/*background: yellow;*/
+	display: block;
+	padding: 30px 0;
+
 }
 
 .menu-list li {
-	display: inline-block;
-	margin: 0 3%;
+	display: inline;
+	margin: auto 3%;
 	color: white;
 	font-size: 1.5em;
+}
+
+.menu img {
+	width: 100%;
+	position: absolute;
+	left: 0;
 }
