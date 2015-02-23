@@ -100,8 +100,8 @@ menu li a {
 }
 
 menu li a:hover {
-	background: #FFF;
-	color: #d55401;
+	background: #000;
+	color: yellow;
 }
 
 
@@ -161,11 +161,13 @@ header, .main {
 *********************************/
 
 .content {
+	margin: 0 auto;
+	width: 310px;
 	text-align: center;
 }
 
 .buttom {
-	width: 300px;
+	width: 100%;
 	height: 50px;
 	background: black;
 	margin: 40px auto;
@@ -175,6 +177,63 @@ header, .main {
 }
 
 
+.profile {
+	margin: 40px auto;
+	width: 100%;
+	height: 160px;
+	border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	background: black;
+	color: yellow;
+}
 
+.profile img {
+	width: 150px;
+	height: 150px;
+	border-radius: 300px;
+	margin: 5px 10px;
+	float: left;
+}
 
+.place {
+	height: 365px;
+	border-radius: 20px;
+	background: black;
+	color: yellow;
+}
+
+.place img {
+	border-radius: 20px;
+}
+
+.gallery {
+	margin: 100px 0;
+	height: 200px;
+	padding-top: 100px;
+	background: black;
+}
+
+.gallery h1 {
+	color: yellow;
+}
+
+.contact {
+	margin: 30px 0;
+}
+
+/********************************
+			FOOTER
+*********************************/
+
+footer {
+	width: 100%;
+	height: 80px;
+	background-image: url("../img/sand2.jpg");
+	text-align: center;
+}
+
+footer p {
+	padding-top: 30px;
+}
 
