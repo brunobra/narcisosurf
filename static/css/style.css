@@ -45,38 +45,136 @@ header {
 }
 
 
-/****************************
+/********************************
 			MENU
-*****************************/
+*********************************/
 
-.menu {
-	margin: 0 auto;
-	margin-top: -20px;
-	width: 100%;
-	height: 105px;
-	text-align: center;
-	background-image: url("../img/board5.png");
-	background-repeat: repeat-y;
-	background-position: center;
-	/*background: linear-gradient(to right, #C8A379, #E6C399, #C8A379);*/
-}
-
-.menu-list {
-	/*background: yellow;*/
+.menu-anchor {
+	width: 40px;
+	height: 32px;
+	margin: 10px auto; 
 	display: block;
-	padding: 30px 0;
-
-}
-
-.menu-list li {
-	display: inline;
-	margin: auto 3%;
-	color: white;
-	font-size: 1.5em;
-}
-
-.menu img {
-	width: 100%;
+	background: #000;
 	position: absolute;
-	left: 0;
+	transition: all .25s linear;
 }
+
+.menu-anchor:before {
+	content: "";
+	display: block;
+	margin: 7px auto;
+	width: 70%;
+	height: 0.25em;
+	background: yellow;
+	box-shadow: 0 .45em 0 0 yellow, 0 .9em 0 0 yellow;
+}
+
+.menu-active .menu-anchor {background: lightblue}
+
+menu {
+	margin-top: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	width: 145px;
+	height: 100%;
+	padding-top: 10px;
+	background-image: url("../img/sand.jpg");
+	/*background: #d55401;*/
+	box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
+}
+
+menu ul {
+	padding: 0;
+}
+
+menu li a {
+	display: block;
+	border-bottom: 1px solid rgba(255,255,255,.3);
+	margin: 0 10px;
+	padding: 10px;
+	color: #FFF;
+	text-decoration: none;
+}
+
+menu li a:hover {
+	background: #FFF;
+	color: #d55401;
+}
+
+
+/*
+	Aqui você esconde o menu para fora da tela 
+	O valor é exatamente a largura da sidebar
+*/
+menu {
+	-webkit-transform: translateX(-145px);
+	-moz-transform: translateX(-145px);
+	-ms-transform: translateX(-145px);
+	transform: translateX(-145px);
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+/*
+	Essa é a posição original do HEADER e do MAIN
+*/
+header, .main {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+	-webkit-transition: all .25s linear;
+	-moz-transition: all .25s linear;
+	-ms-transition: all .25s linear;
+	transition: all .25s linear;
+}
+
+/*
+   Com a classe menu-active na tag HTML
+*/
+
+.menu-active menu {
+	-webkit-transform: translateX(0);
+	-moz-transform: translateX(0);
+	-ms-transform: translateX(0);
+	transform: translateX(0);
+}
+
+.menu-active header, 
+.menu-active .main {
+	-webkit-transform: translateX(145px);
+	-moz-transform: translateX(145px);
+	-ms-transform: translateX(145px);
+	transform: translateX(145px);
+}
+
+
+
+
+/********************************
+			CONTENT
+*********************************/
+
+.content {
+	text-align: center;
+}
+
+.buttom {
+	width: 300px;
+	height: 50px;
+	background: black;
+	margin: 40px auto;
+	text-align: center;
+	border-radius: 20px;
+	color: yellow;
+}
+
+
+
+
+
