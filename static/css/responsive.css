@@ -5,28 +5,80 @@
 */
 
 /* for tablets and desktops */
-@media screen and (min-width: 660px) {
-
+@media screen and (min-width: 600px) {
 	/****************************
-			MENU
+			   CONTENT
 	*****************************/
-	.menu {
-		background: none;
-		position: absolute;
-		top: 50px;
-		left: 25%;
-	}
-
-	.menu-list {
-		top: 0;
-		right: 0;
+	.profile {
 		width: 100%;
-		padding: 0;
+		height: 250px;
+		text-align: center;
 	}
 
+	.profile-img {
+		width: 270px;
+		height: 160px;
+		background-image: url("../img/narciso.jpg");
+		background-size: 300px 300px;
+		background-position: -30px -75px;
+		border-radius: 10px;
+		margin: 0;
+		float: left;
+	}
 
-	.menu img {
+	.profile h2  {
+		padding: 0;
+		margin: 0;
+	}
+
+	.profile h3,
+	.profile h4 {
 		display: none;
 	}
 
+	.profile span  {
+		padding: 0 15px;
+		display: block;
+	}
+
+	.profile {
+		width: 100%;
+		display: block;
+		float: left;
+	}
+
+	@media screen and (min-width: 900px) {
+		/****************************
+				   CONTENT
+		*****************************/
+
+		.sign {
+			float: left;
+		}
+
+		.profile {
+			max-width: 500px;
+			float: right;
+		}
+		@media screen and (min-width: 1100px) {
+			/****************************
+					   CONTENT
+			*****************************/
+
+			.sign {
+				margin-left: 5%;
+			}
+
+			.profile {
+				margin-right: 5%;
+			}
+		};
+
+	};
+	
 };
+
+
+
+
+
