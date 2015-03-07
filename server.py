@@ -10,5 +10,11 @@ def index():
     return resp
 
 
+@app.route("/surf.html")
+def surf():
+    resp = make_response(render_template('surf.html'))
+    return resp
+
+
 if __name__ == "__main__":
     app.run(debug=True)
