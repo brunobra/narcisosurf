@@ -18,6 +18,9 @@ a {
 *****************************/
 
 header {
+	position: fixed;
+	top: 0;
+	width: 100%;
 	height: 100px;
 	background: linear-gradient(white 10%, #D0D0D0 100%);
 	box-shadow: 1px black;
@@ -25,11 +28,7 @@ header {
     box-shadow: 0 5px 20px #888888;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-}
-
-.background img {
-	width: 100%;
-	margin-bottom: 5px;
+    z-index: 10;
 }
 
 .logo {
@@ -173,6 +172,16 @@ header, .content {
 			CONTENT
 *********************************/
 
+.background {
+	position: fixed;
+	background-image: url("../img/enseada.jpg");
+	background-position: -380px 0;
+	background-size: 1280px;
+	width: 100%;
+	height: 400px;
+	top: 100px;
+}
+
 .content{
 	width: 90%;
 	margin: 0 auto;
@@ -189,23 +198,23 @@ header, .content {
 
 .sign {
 	font-family: arial;
-	color: white;
+	color: #F0F0F0;
 	border-style: solid;
-	border-color: green;
+	border-color: #006600;
 	border-radius: 5px;
 	text-align: left;
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 40px;
+	margin-top: 200px;
 	margin-bottom: 40px;
-
+	z-index: -10;
 }
 
 .classes {
 	border-style: solid;
-	border-color: white;
+	border-color: #F0F0F0;
 	border-radius: 5px;
-	background: green;
+	background: #006600;
 	vertical-align: middle;
 }
 
