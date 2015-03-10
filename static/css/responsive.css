@@ -6,13 +6,10 @@
 
 /* for tablets and desktops */
 @media screen and (min-width: 600px) {
+
 	/****************************
 			   CONTENT
 	*****************************/
-
-	.sign {
-		/*display: none;*/
-	}
 
 	.profile {
 		display: none;
@@ -29,14 +26,8 @@
 		background-size: 300px 300px;
 		background-position: -30px -75px;
 		border-radius: 10px;
-		/*margin: 0;*/
-		/*float: left;*/
 	}
 
-/*	.profile h2  {
-		padding: 0;
-		margin: 0;
-	}*/
 
 	.profile h2,
 	.profile h3,
@@ -44,51 +35,67 @@
 		display: none;
 	}
 
-/*	.profile span  {
-		padding: 0 15px;
-		display: block;
-	}
-
-	.profile {
-		width: 100%;
-		display: block;
-		float: left;
-	}*/
-
 	.gallery {
 		margin-top: 300px;
 	}
 
 	@media screen and (min-width: 900px) {
+			/****************************
+					   MENU
+			*****************************/
+
+			menu {
+				-webkit-transform: translateX(0);
+				-moz-transform: translateX(0);
+				-ms-transform: translateX(0);
+				transform: translateX(0);
+				position: fixed;
+				box-shadow: none;
+				width: 100%;
+				margin-top: 35px;
+			}
+
+			menu ul {
+				display: inline-block;
+				position: relative;
+				width: 100%;
+			}
+
+			.menu-left {
+				margin-left: 5%;
+				float: left;
+			}
+
+			.menu-right {
+				margin-right: 5%;
+				float: right;
+			}
+
+			menu ul li {
+				display: inline-block;
+			}
+
+			menu ul li a {
+				margin-left: 5px;
+			}
+
+			.menu-anchor {
+				display: none;
+			}
+
+
+
 		/****************************
 				   CONTENT
 		*****************************/
 
 		.background {
 			background-position: 0;
+			top: 100px;
 		}
 
-		.sign {
-			/*float: left;*/
-		}
-
-/*		.profile {
-			max-width: 500px;
-			float: right;
-		}*/
 		@media screen and (min-width: 1100px) {
-			/****************************
-					   CONTENT
-			*****************************/
 
-			.sign {
-				/*margin-left: 5%;*/
-			}
-
-/*			.profile {
-				margin-right: 5%;
-				margin-top: 40px;
-			}*/
 		};
 
 	};
