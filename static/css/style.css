@@ -152,8 +152,7 @@ header, .content {
 	transform: translateX(0);
 }
 
-.menu-active header, 
-.menu-active .content {
+.menu-active header {
 	-webkit-transform: translateX(145px);
 	-moz-transform: translateX(145px);
 	-ms-transform: translateX(145px);
