@@ -11,6 +11,10 @@
 			   CONTENT
 	*****************************/
 
+	.background {
+		background-image: linear-gradient( to top, #F8F8FF 53%, transparent), url("../img/enseada.jpg");
+	}
+
 	.profile {
 		display: none;
 		width: 100%;
@@ -39,7 +43,32 @@
 		margin-top: 300px;
 	}
 
+	/****************************
+			   HEADER
+	*****************************/
+
+	footer {
+		position: relative;
+	}
+
 	@media screen and (min-width: 900px) {
+			/****************************
+					   HEADER
+			*****************************/
+
+			header {
+				border-bottom-right-radius: 0;
+			    border-bottom-left-radius: 0;
+			    background: #F8F8FF;
+			    height: 35px;
+			    box-shadow: none;
+			}
+
+			.logo {
+				width: 120px;
+				height: 120px;
+			}
+
 			/****************************
 					   MENU
 			*****************************/
@@ -52,7 +81,9 @@
 				position: fixed;
 				box-shadow: none;
 				width: 100%;
-				margin-top: 35px;
+				height: 60px;
+				margin-top: 8px;
+				background: none;
 			}
 
 			menu ul {
@@ -61,14 +92,28 @@
 				width: 100%;
 			}
 
+			menu ul a{
+				border-bottom: none;
+			}
+
 			.menu-left {
-				margin-left: 5%;
+				padding-left: 5%;
 				float: left;
+				background: linear-gradient(#F8F8FF 40%, #D0D0D0);
+				box-shadow: 0 5px 20px #888888;
+				width: 45%;
+				border-bottom-right-radius: 50px;
+				box-sizing: border-box;
 			}
 
 			.menu-right {
-				margin-right: 5%;
+				padding-left: 5%;
 				float: right;
+				background: linear-gradient(#F8F8FF 40%, #D0D0D0);
+				box-shadow: 0 5px 20px #888888;
+				width: 45%;
+				border-bottom-left-radius: 50px;
+				box-sizing: border-box;
 			}
 
 			menu ul li {
@@ -90,11 +135,23 @@
 		*****************************/
 
 		.background {
+			background-image: linear-gradient( to top, #F8F8FF 5%, transparent, #F8F8FF 95%), url("../img/enseada.jpg");
 			background-position: 0;
 			top: 100px;
 		}
 
 		@media screen and (min-width: 1100px) {
+			/****************************
+					   MENU
+			*****************************/
+			.menu-left {
+				width: 46%;
+			}
+
+			.menu-right {
+				width: 46%;
+				padding-left: 10%;
+			}
 
 		};
 

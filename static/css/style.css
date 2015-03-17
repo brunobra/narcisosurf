@@ -22,7 +22,7 @@ header {
 	top: 0;
 	width: 100%;
 	height: 60px;
-	background: linear-gradient(white 10%, #D0D0D0 100%);
+	background: linear-gradient(white 10%, #D0D0D0 60%);
 	box-shadow: 1px black;
 	margin-bottom: 10px;
     box-shadow: 0 5px 20px #888888;
@@ -34,7 +34,7 @@ header {
 .logo {
 	height: 90px;
 	width: 90px;
-	border-radius: 120px;
+	border-radius: 50%;
 	background: black;
 	text-align: center;
 	margin: 0 auto;
@@ -43,12 +43,6 @@ header {
 	right: 0;
 	left: 0;
 	box-shadow: 0 5px 20px #888888;
-}
-
-.logo img {
-	height: 97%;
-	border-radius: 80px;
-	margin: 0 auto;
 }
 
 
@@ -88,7 +82,8 @@ menu {
 	width: 145px;
 	height: 100%;
 	padding-top: 10px;
-	box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3)
+	box-shadow: inset -5px -10px 10px 0 rgba(0,0,0,.3);
+	background: linear-gradient(white 10%, #D0D0D0 60%);;
 }
 
 menu ul {
@@ -135,7 +130,7 @@ menu {
 /*
 	Essa é a posição original do HEADER e do MAIN
 */
-header, .content {
+header, body {
 	-webkit-transform: translateX(0);
 	-moz-transform: translateX(0);
 	-ms-transform: translateX(0);
@@ -174,12 +169,12 @@ header, .content {
 
 .background {
 	position: fixed;
-	background-image: url("../img/enseada.jpg");
-	background-position: -380px 0;
+	background: linear-gradient( to top, #F8F8FF 67%, transparent), url("../img/enseada.jpg") no-repeat center;
+	background-position: -450px -20px;
 	background-size: 1280px;
 	width: 100%;
 	height: 400px;
-	top: 70px;
+	top: 60px;
 }
 
 .content{
@@ -205,7 +200,7 @@ header, .content {
 	text-align: left;
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 200px;
+	margin-top: 130px;
 	margin-bottom: 40px;
 	z-index: -10;
 }
@@ -297,6 +292,7 @@ header, .content {
 
 .contact {
 	margin: 30px 0;
+	margin-bottom: 100px;
 }
 
 .contact a p {
