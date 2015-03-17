@@ -13,6 +13,22 @@ a {
 }
 
 
+h1,
+h2,
+h3,
+h4 {
+	color: yellow;
+	text-shadow: 2px 0 0 #000,
+			    -2px 0 0 #000,
+			     0 2px 0 #000, 
+			    0 -2px 0 #000, 
+			     1px 1px #000, 
+			 -1px -1px 0 #000, 
+			  1px -1px 0 #000, 
+			  -1px 1px 0 #000;
+}
+
+
 /****************************
 			HEADER
 *****************************/
@@ -168,7 +184,7 @@ header, .content {
 
 .background {
 	position: fixed;
-	background: linear-gradient( to top, #F8F8FF 67%, transparent), url("../img/enseada.jpg") no-repeat center;
+	background: linear-gradient( to top, #F8F8FF 67%, transparent 87%), url("../img/enseada.jpg") no-repeat center;
 	background-position: -450px -20px;
 	background-size: 1280px;
 	width: 100%;
@@ -182,13 +198,12 @@ header, .content {
 	text-align: center;
 }
 
-/*.content-up {
+
+.sign-holder {
 	margin: 0 auto;
-	width: 310px;
+	margin-top: 130px;
 	text-align: center;
-}*/
-
-
+}
 
 .sign {
 	font-family: arial;
@@ -199,9 +214,13 @@ header, .content {
 	text-align: left;
 	width: 300px;
 	margin: 0 auto;
-	margin-top: 130px;
-	margin-bottom: 40px;
 	z-index: -10;
+}
+
+.sign h1,
+.sign h2 {
+	color: white;
+	text-shadow: none;
 }
 
 .classes {
@@ -236,11 +255,10 @@ header, .content {
 }
 
 .profile {
-	margin: 30px auto;
+	margin: 60px auto;
 	width: 300px;
 	height: 160px;
-	color: black;
-	/*text-indent: -9999px;*/
+	color: yellow;
 }
 
 .profile-img {
@@ -272,21 +290,50 @@ header, .content {
 	margin-top: 0;
 }
 
-.place img {
-	border-radius: 20px;
-	margin-top: 0;
+.place iframe {
+	width: 100%;
+	height: 300px;
+}
+
+.scrolloff {
+    pointer-events: none;
 }
 
 .gallery {
 	width: 100%;
-	margin: 40px 0;
+	margin: 50px 0;
 	height: 200px;
-	padding-top: 100px;
 	background: black;
 }
 
 .gallery h1 {
+	margin: 0 auto;
 	color: yellow;
+	display: inline-block;
+}
+
+.gallery #next {
+	margin-top: 10px;
+	margin-right: 5%;
+	float: right;
+}
+
+.gallery #before {
+	margin-top: 10px;
+	margin-left: 5%;
+	float: left;
+}
+
+.gallery a {
+	display: inline-block;
+}
+
+.gallery .images img {
+	height: 150px;
+}
+
+.place {
+	margin: 100px auto;
 }
 
 .contact {
@@ -294,8 +341,13 @@ header, .content {
 	margin-bottom: 100px;
 }
 
-.contact a p {
-	color: yellow;
+.contact ul {
+	padding: 0;
+}
+
+.contact ul li {
+	list-style: none;
+	color: white;
 	text-shadow: 2px 0 0 #000,
 			    -2px 0 0 #000,
 			     0 2px 0 #000, 
