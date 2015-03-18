@@ -35,6 +35,9 @@ var imageName = 1;
 var $overlay = $('<div id="overlay"></div>')
 var $image = $("<img>")
 
+
+
+
 $overlay.append($image);
 
 while ( imageName <= totalImages){
@@ -58,5 +61,9 @@ $overlay.click(function(){
 	$overlay.hide();
 });
 
+
+$('.gallery .images').bind('touchmove', function(e){
+	$('.gallery .images a').preventDefault();
+});
 
 
