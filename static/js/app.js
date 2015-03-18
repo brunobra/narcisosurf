@@ -61,9 +61,3 @@ $overlay.click(function(){
 	$overlay.hide();
 });
 
-
-$('.gallery .images').bind('touchstart', function(e){
-	$('.gallery .images a').preventDefault();
-});
-
-
