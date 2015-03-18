@@ -50,7 +50,7 @@ while ( imageName <= totalImages){
 
 $("body").append($overlay);
 
-$(".gallery .images a").on('click touchstart', function(e){
+$(".gallery .images a").on('click', function(e){
 	e.preventDefault();
 	var imageLocation = $(this).attr("href");
 	$image.attr("src", imageLocation);
@@ -62,7 +62,7 @@ $overlay.click(function(){
 });
 
 
-$('.gallery .images').bind('touchmove', function(e){
+$('.gallery .images').bind('touchstart', function(e){
 	$('.gallery .images a').preventDefault();
 });
 
