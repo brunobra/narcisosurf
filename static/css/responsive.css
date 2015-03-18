@@ -19,28 +19,34 @@
 	.profile {
 		text-align: center;
 		width: 100%;
-		height: 235px;
+		height: 100%;
 		text-align: center;
 		margin-bottom: 0;	
 		background: black;	
 	}
 
 	.profile-img {
-		width: 270px;
-		height: 160px;
-		background-image: url("../img/narciso.jpg");
-		background-size: 300px 300px;
-		background-position: -30px -75px;
-		border-radius: 10px;
-		margin: 0 auto;
-		float: none;
+		margin: 10px;
+		float: left;
 	}
 
+	.profile span {
+		display: block;
+		color: white;
+		margin: 10px;
+	}
 
 	.profile h2,
 	.profile h3,
 	.profile h4 {
-		display: none;
+		margin-right: 20px;
+		display: inline;
+	}
+
+	#overlay img {
+		margin-top: 200px;
+		max-width: 550px;
+		max-height: 700px;
 	}
 
 	/****************************
@@ -139,6 +145,7 @@
 		}
 
 		.content-up {
+			margin-top: 10px;
 			width: 100%;
 		}
 
@@ -151,6 +158,13 @@
 			float: left;
 			width: 49%;
 			margin-top: 130px;
+		}
+
+
+		#overlay img {
+			margin-top: 200px;
+			max-width: 800px;
+			max-height: 500px;
 		}
 
 		.contact ul li {
@@ -178,6 +192,12 @@
 				background-image: linear-gradient( to top, #F8F8FF 15%, transparent 60%), url("../img/enseada.jpg");
 				background-position: 0;
 				top: 75px;
+			}
+
+			#overlay img {
+				margin-top: 150px;
+				max-width: 1000px;
+				max-height: 500px;
 			}
 
 		};

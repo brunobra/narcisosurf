@@ -32,6 +32,11 @@ var totalImages = 7;
 var imageDir = "static/img/gallery/";
 var imageName = 1;
 
+var $overlay = $('<div id="overlay"></div>')
+var $image = $("<img>")
+
+$overlay.append($image);
+
 while ( imageName <= totalImages){
 	var image = imageDir + imageName;
 	var imageHTML = "<a href=\"" + image + ".jpg\"><img src=\"" + image + ".jpg\"></img></a>"
@@ -40,15 +45,18 @@ while ( imageName <= totalImages){
 	imageName++;
 }
 
+$("body").append($overlay);
 
-$(".gallery #next").on('click touchstart', function(e){
-	console.log("next");
+$(".gallery .images a").on('click touchstart', function(e){
 	e.preventDefault();
+	var imageLocation = $(this).attr("href");
+	$image.attr("src", imageLocation);
+	$overlay.show();
 })
 
-$(".gallery #before").on('click touchstart', function(e){
-	console.log("before");
-	e.preventDefault();
-})
+$overlay.click(function(){
+	$overlay.hide();
+});
+
 
 
