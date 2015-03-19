@@ -1,0 +1,18 @@
+.place {
+	margin-bottom: 20px;
+	height: 500px;
+}
+
+.place .map {
+	height: 95%;
+}
+
+.place iframe {
+	height: 92%;
+}
+
+@media screen and (min-width: 600px) {
+	.place {
+		margin-top: 140px;
+	}
+}
