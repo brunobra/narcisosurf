@@ -371,6 +371,7 @@ header, .content {
 	height: 377px;
 	border-radius: 20px;
 	background-color: rgba(240, 240, 255, 0.8);
+	box-shadow: 10px 10px 20px #888888;
 }
 
 .place h1 {
