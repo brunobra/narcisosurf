@@ -28,7 +28,7 @@ $("#map_canvas1").mouseleave(function () {
 		GALLERY
 *********************/
 
-var totalImages = 7;
+var totalImages = 21;
 var imageDir = "static/img/gallery/";
 var imageName = 1;
 

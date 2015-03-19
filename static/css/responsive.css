@@ -22,11 +22,9 @@
 		height: 100%;
 		text-align: center;
 		margin-bottom: 0;	
-		/*background: black;	*/
 	}
 
 	.profile-img {
-		margin: 10px;
 		float: left;
 	}
 
@@ -103,21 +101,25 @@
 		}
 
 		.menu-left {
+			padding-top: 10px;
 			padding-left: 5%;
 			float: left;
 			background: linear-gradient(#F8F8FF 40%, #D0D0D0);
 			box-shadow: 0 5px 20px #888888;
 			width: 45%;
+			height: 50px;
 			border-bottom-right-radius: 50px;
 			box-sizing: border-box;
 		}
 
 		.menu-right {
+			padding-top: 10px;
 			padding-left: 5%;
 			float: right;
 			background: linear-gradient(#F8F8FF 40%, #D0D0D0);
 			box-shadow: 0 5px 20px #888888;
 			width: 45%;
+			height: 50px;
 			border-bottom-left-radius: 50px;
 			box-sizing: border-box;
 		}
